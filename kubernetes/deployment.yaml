@@ -6,9 +6,8 @@ spec:
   selector:
     app: hello-python
   ports:
-  - protocol: "TCP"
-    port: 6000
-    targetPort: 5000
+  - port: 80
+    targetPort: 80
   type: LoadBalancer
 
 
@@ -28,4 +27,4 @@ spec:
       - name: hello-python
         image: gcr.io/nice-gate-272207/hello-python:v1
         ports:
-        - containerPort: 5000
+        - containerPort: 80
