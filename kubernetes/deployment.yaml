@@ -27,6 +27,5 @@ spec:
       containers:
       - name: hello-python
         image: gcr.io/nice-gate-272207/hello-python:v1
-        imagePullPolicy: Never
         ports:
         - containerPort: 5000
